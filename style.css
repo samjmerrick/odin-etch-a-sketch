@@ -1,5 +1,6 @@
 :root {
   --pixel-active-color: #000000;
+  --grid-size: 8;
 }
 
 body {
@@ -9,8 +10,8 @@ body {
 
 .sketch { 
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
   width: 400px;
   height: 400px;
   margin: 0 auto;
