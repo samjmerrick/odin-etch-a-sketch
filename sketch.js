@@ -9,3 +9,9 @@ for (let i = 0; i < gridSize * gridSize; i++) {
   pixel.className = "pixel";
   sketch.appendChild(pixel);
 }
+
+document.querySelectorAll('.pixel').forEach(pixel => {
+  pixel.addEventListener('click', () => {
+    pixel.classList.toggle('active');
+  });
+});

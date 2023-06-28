@@ -13,3 +13,7 @@ body {
 .pixel {
   background-color: #DDD;
 }
+
+.pixel.active {
+  background-color: #000;
+}
