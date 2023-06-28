@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, Sans-Serif;
+  text-align: center;
 }
 
 .sketch { 
@@ -8,10 +9,24 @@ body {
   grid-template-rows: repeat(16, 1fr);
   width: 400px;
   height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: 0.5;
+}
+button:hover {
+  background-color: #CCC;
+  cursor: pointer;
 }
 
 .pixel {
   background-color: #DDD;
+  transition: 0.2s;
 }
 
 .pixel:hover {
