@@ -11,7 +11,10 @@ for (let i = 0; i < gridSize * gridSize; i++) {
 }
 
 document.querySelectorAll('.pixel').forEach(pixel => {
-  pixel.addEventListener('click', () => {
-    pixel.classList.toggle('active');
+  pixel.addEventListener('mousedown', () => pixel.classList.toggle('active'));
+  pixel.addEventListener('mouseover', (e) => {
+    if(e.buttons == 1) {
+      pixel.classList.toggle('active');
+    }
   });
 });
