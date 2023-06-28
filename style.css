@@ -1,3 +1,7 @@
+:root {
+  --pixel-active-color: #000000;
+}
+
 body {
   font-family: Roboto, Sans-Serif;
   text-align: center;
@@ -29,10 +33,7 @@ button:hover {
   transition: 0.2s;
 }
 
-.pixel:hover {
-  background-color: #AAA;
-}
-
-.pixel.active {
-  background-color: #000;
+.pixel:not([style*="background-color"]):hover {
+  background-color: var(--pixel-active-color);
+  opacity: 0.75;
 }
