@@ -1,8 +1,11 @@
-const gridSize = 16;
-const sketchContainer = document.querySelector(".sketch");
+const gridSize = 8;
+const sketch = document.querySelector(".sketch");
 
-for (let i = 0; i < gridSize; i++) {
+sketch.style.gridTemplateColumns = `repeat(${gridSize}, 1fr`;
+sketch.style.gridTemplateRows = `repeat(${gridSize}, 1fr`;
+
+for (let i = 0; i < gridSize * gridSize; i++) {
   const pixel = document.createElement("div");
   pixel.className = "pixel";
-  sketchContainer.appendChild(pixel);
+  sketch.appendChild(pixel);
 }

@@ -1,3 +1,15 @@
 body {
   font-family: Roboto, Sans-Serif;
 }
+
+.sketch { 
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: 400px;
+  height: 400px;
+}
+
+.pixel {
+  background-color: #DDD;
+}
